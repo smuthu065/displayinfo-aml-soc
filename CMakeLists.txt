@@ -10,6 +10,12 @@ set(LIB_NAME DeviceinfoSoc)
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+find_package(LibDRM REQUIRED)
+find_path (STAGING_INCDIR glib-2.0)
+include_directories(include)
+include_directories(${STAGING_INCDIR})
+include_directories(${STAGING_INCDIR}/libdrm)
+
 # Add Include Directories
 include_directories(
     ${CMAKE_CURRENT_SOURCE_DIR}/include
