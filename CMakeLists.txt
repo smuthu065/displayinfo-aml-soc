@@ -10,6 +10,8 @@ set(LIB_NAME DeviceinfoSoc)
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_LIST_DIR}/cmake")
+
 find_package(LibDRM REQUIRED)
 find_path (STAGING_INCDIR glib-2.0)
 include_directories(include)
