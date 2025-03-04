@@ -25,8 +25,8 @@ include_directories(
 
 # Source Files
 set(SRC_FILES
-    DeviceSettings/Amlogic/SoC_abstraction.cpp
-    DeviceSettings/Amlogic/kms.c
+    SoC_abstraction.cpp
+    kms.c
 )
 
 # Create Shared Library
