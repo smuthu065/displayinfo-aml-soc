@@ -4,7 +4,7 @@ cmake_minimum_required(VERSION 3.3)
 project(DisplayInfoSoc)
 
 # Set Library Name
-set(LIB_NAME displayinfoSoc)
+set(LIB_NAME displayinfosoc)
 
 # Set C++ Standard
 set(CMAKE_CXX_STANDARD 11)
@@ -33,7 +33,7 @@ set(SRC_FILES
 add_library(${LIB_NAME} SHARED ${SRC_FILES})
 
 # Set Library Output Name
-set_target_properties(${LIB_NAME} PROPERTIES OUTPUT_NAME "displayinfoSoc")
+set_target_properties(${LIB_NAME} PROPERTIES OUTPUT_NAME "displayinfosoc")
 
 # Link Required Libraries (if any)
 target_link_libraries(${LIB_NAME}
