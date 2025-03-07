@@ -41,9 +41,4 @@ target_link_libraries(${LIB_NAME}
     drm   # DRM Library for Linux graphics backend
 )
 
-# Install Library
-install(TARGETS ${LIB_NAME}
-    DESTINATION lib
-)
-
 message("Library ${LIB_NAME} built successfully")
